@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satoshi Samurai - Private Investment Memorandum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background flex min-h-screen flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div class="w-full max-w-4xl bg-card shadow-2xl border-primary/20 rounded-lg">
+        <header class="text-center p-6 bg-muted/30 rounded-t-lg">
+        </header>
+        <div class="h-[75vh] overflow-y-auto">
+            <div class="p-6 md:p-8 space-y-8">
+                
+                <section id="intro-header" class="bg-muted/30 p-6 rounded-lg border border-border/50 text-center">
+                    <h1 class="text-8xl font-headline font-bold text-title-effect text-primary mb-4">Satoshi Samurai</h1>
+                    <h2 class="text-2xl font-bold text-accent">Private Investment Memorandum</h2>
+                    <a href="https://satoshisamurai.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline mt-2 inline-block">satoshisamurai.com</a>
+                    <p class="text-foreground/90 mt-2">This is a hyper-casual Web3 gaming ecosystem designed for mass adoption.</p>
+                    <div class="mt-4 text-sm text-muted-foreground space-y-1">
+                        <p class="font-bold text-destructive flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                             Highly Confidential
+                        </p>
+                        <p><strong>Prepared by:</strong> Angelo Ioannou, Developer, Architect, Founder</p>
+                        <p><strong>Entity:</strong> Affinity Magnate, Inc. / Ai NFT Lab</p>
+                    </div>
+                </section>
+                
+                <hr class="border-border/50" />
+
+                <section id="legend" class="bg-muted/30 p-6 rounded-lg border border-primary/30 text-center">
+                  <h2 class="flex items-center text-3xl font-headline font-bold text-primary mb-4 justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M22 10v6M2 10v6M12 2v20M2 15h20M2 9h20"/></svg> The Legend of the Satoshi Samurai
+                  </h2>
+                  <div class="space-y-3 text-lg text-foreground/90 italic max-w-2xl mx-auto">
+                    <p>In the ashes of a broken digital empire, a single spark remained—<strong class="text-accent not-italic">the Genesis Flame.</strong> They called it The Million. One million Bitcoins, lost, untouched, hidden by the Ghost of Nakamoto.</p>
+                    <p>From the shadowed edge of cyberspace rises a forgotten warrior: Satoshi Samurai. Forged in silence, raised by code, and bound by honor to reclaim it.</p>
+                  </div>
+                </section>
+
+                <hr class="border-border/50" />
+
+                <section id="table-of-contents" class="bg-muted/30 p-6 rounded-lg border border-border/50">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-4 justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 8h10M7 12h10M7 16h10"/></svg>
+                    Table of Contents
+                  </h2>
+                  <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-foreground/90 list-none p-0 text-center md:text-left">
+                     <li><a href="#legend" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">The Legend of the Satoshi Samurai</a></li>
+                     <li><a href="#executive-summary" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">Executive Summary</a></li>
+                     <li><a href="#report-from-future" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">A Report From The Future</a></li>
+                     <li><a href="#formula" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">The Satoshi Samurai Formula</a></li>
+                     <li><a href="#influencer-flywheel" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">The Influencer Flywheel</a></li>
+                     <li><a href="#valuation" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">The Valuation Formula</a></li>
+                     <li><a href="#monetization" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">Monetization & Roadmap</a></li>
+                     <li><a href="#franchise-expansion" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">Ecosystem & Franchise Expansion</a></li>
+                     <li><a href="#tokenomics" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">Tokenomics & Liquidity</a></li>
+                     <li><a href="#growth" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">Growth & Investment</a></li>
+                     <li><a href="#budget-allocation" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">Budget Allocation ($50M Seed)</a></li>
+                     <li><a href="#team" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">The Core Team</a></li>
+                     <li><a href="#founder-bio" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">Founder Bio</a></li>
+                     <li><a href="#investment-opportunity" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">The Investment Opportunity</a></li>
+                     <li><a href="#contact" class="text-lg text-primary hover:text-accent hover:underline transition-colors duration-200">Contact & Next Steps</a></li>
+                  </ul>
+                </section>
+
+                <hr class="border-border/50" />
+                
+                <section id="executive-summary" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    Executive Summary
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                    <p><strong>Vision:</strong> "Satoshi Samurai" is a revolutionary, hyper-casual Web3 gaming ecosystem designed for mass adoption. We bridge the gap between addictive mobile gaming and the future of decentralized finance, creating a highly scalable, multi-vertical entertainment franchise. Our mission is to onboard millions of users into Web3 by delivering an unparalleled, rewarding, and community-driven experience. The game is now live and primed for exponential growth.</p>
+                    <p><strong>The Ask:</strong> We are seeking <strong class="text-primary">$50 million for 25% equity</strong> to accelerate global expansion, scale our elite Barcelona-based team, and execute our multi-phased monetization and metaverse strategy. This investment will fuel our trajectory to a <strong class="text-primary">$1B+ valuation within 24-48 months.</strong></p>
+                  </div>
+                </section>
+
+                <hr class="border-border/50" />
+                
+                <section id="report-from-future" class="bg-muted/30 p-6 rounded-lg border border-primary/30">
+                    <h2 class="text-center text-3xl font-headline font-bold text-primary mb-2">The Year is 2030. What Did You Miss?</h2>
+                    <p class="text-center text-muted-foreground text-md mb-6">A Report from the Future on the State of Web3 Gaming & Digital Economies.</p>
+                    <ul class="space-y-4 text-lg text-foreground/90 list-disc pl-6">
+                        <li><strong class="text-accent">Play-and-Earn Economies</strong>, pioneered by Satoshi Samurai, now represent over 60% of all new revenue in the gaming industry, shifting power from publishers to players.</li>
+                        <li><strong class="text-accent">In-Game Asset Ownership</strong>, powered by the $SAMURAI token, has become a more dominant high-growth investment class than traditional collectibles for a new generation of digital natives.</li>
+                        <li>The <strong class="text-accent">Satoshi Samurai Engine</strong> now powers <strong class="text-primary">1 in every 4</strong> successful Web3 games, establishing it as the foundational OS for the new play-to-own digital economy.</li>
+                    </ul>
+                    <p class="text-center text-xl font-bold text-primary mt-8">If you're reading this in 2025, this was the moment to act.</p>
+                    <p class="text-center text-lg italic text-muted-foreground mt-2">In a world of walled-garden games, we built the metaverse.</p>
+                </section>
+                
+                <hr class="border-border/50" />
+
+                <section id="formula" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.3.09-3.18-.83-1.19-.42-2.79.06-3.71.63-1.22.21-2.87-.09-3.77a1.99 1.99 0 0 0-3.21.72c-.22.68-.22 1.42-.08 2.1.28 1.43-.43 2.59-1.31 3.22-1.22.88-2.64.44-3.57.03Z"/><path d="M12 18s-4-3-4-9 4-9 4-9 4 3 4 9-4 9-4 9Z"/></svg>
+                    The Satoshi Samurai Formula
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                    <p class="text-lg">How one simple yet elegant formula can create a <strong>$10B+ start up in 5 years.</strong></p>
+                    <div class="p-4 bg-muted/50 rounded-lg text-center font-mono text-accent text-lg sm:text-xl tracking-wider my-4">
+                        Φ_S = (GDP_S * V_m) * (AI * T)k * N(t) * U_SAMURAI
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+                        <p><strong>Φ_S:</strong> Total Value of the Satoshi Samurai Ecosystem.</p>
+                        <p><strong>GDP_S:</strong> Gross Domestic Product of Satoshi Samurai (Total economic activity).</p>
+                        <p><strong>V_m:</strong> Velocity of Money ($SAMURAI circulation speed).</p>
+                        <p><strong>(AI * T)k:</strong> The exponential power of our AI core and Technology stack.</p>
+                        <p><strong>N(t):</strong> Viral network effects over time.</p>
+                        <p><strong>U_SAMURAI:</strong> The broad utility and integration of the $SAMURAI token.</p>
+                    </div>
+                    <blockquote class="mt-6 border-l-4 border-primary pl-4 italic text-muted-foreground">
+                        "It's a given that great ambition faces great resistance. If it does not break you, you can go on to achieve extraordinary things."
+                        <cite class="mt-2 block not-italic font-semibold text-foreground/80">- Angelo Ioannou</cite>
+                    </blockquote>
+                  </div>
+                </section>
+                
+                <hr class="border-border/50" />
+                
+                <section id="influencer-flywheel" class="space-y-4">
+                    <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m8.59 10.49 6.83-3.98"/></svg>
+                        The Influencer Flywheel: A Formula for Exponential Growth
+                    </h2>
+                    <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                        <p class="text-lg">
+                            Traditional marketing is broken. In Web3, value is created through authentic, community-driven hype. Our growth is not just a plan; it's a protocol. The <strong>Influencer Flywheel Formula</strong> models our strategy for global domination.
+                        </p>
+                        <div class="p-4 bg-muted/50 rounded-lg text-center font-mono text-accent text-lg sm:text-xl tracking-wider my-4">
+                            Φ_V = ∫[I_g * (A_r * k_v)^E_c] * N(t) dt
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+                            <p><strong>Φ_V:</strong> Total Viral Expansion Value (The global impact of our message).</p>
+                            <p><strong>I_g:</strong> Global Influencer Reach (The cumulative network of our partnered content creators).</p>
+                            <p><strong>A_r:</strong> Authenticity & Resonance (A multiplier for how deeply our message connects).</p>
+                            <p><strong>k_v:</strong> Intrinsic Virality Coefficient (The game's built-in shareability and reward structure).</p>
+                            <p><strong>E_c:</strong> Event & Competition Multiplier (Amplifies hype during tournaments and content drops).</p>
+                            <p><strong>N(t):</strong> The Network Effect over Time (The exponential growth as the player base expands).</p>
+                        </div>
+                        <div class="mt-6 space-y-4">
+                            <h4 class="font-bold text-lg text-primary">Deconstructing the Protocol</h4>
+                            <p>This isn't just about paying influencers. It's about engineering a self-sustaining growth engine. We target micro and macro influencers across Twitch, YouTube, and TikTok, providing them with early access, exclusive content, and a stake in the ecosystem's success ($SAMURAI tokens). This creates an <strong class="text-accent">authentic advocacy network (A_r)</strong>.</p>
+                            <p>Major <strong class="text-accent">esports events and competitions (E_c)</strong> act as massive amplifiers, creating focal points for the entire network to rally around. As the <strong class="text-accent">player base grows (N(t))</strong>, so does the value of the game and its token, attracting even larger influencers <strong class="text-accent">(I_g)</strong>. This creates a powerful, unstoppable flywheel effect that will propel Satoshi Samurai to the forefront of the Web3 gaming conversation.</p>
+                        </div>
+                        <div class="mt-8 space-y-4 p-4 bg-muted/50 rounded-lg border border-primary/30">
+                            <h4 class="flex items-center font-bold text-lg text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h4"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M21 7.5h-4"/><path d="M21 12h-4"/><path d="M21 16.5h-4"/></svg>Strategic Brand Placement: "Run Like God"</h4>
+                            <p>Beyond the digital realm, we are creating a powerful new marketing vertical through strategic brand integration. We have allocated <strong class="text-accent">$10 million</strong> from our marketing budget for a key brand placement in the upcoming blockbuster film, <strong class="text-primary italic">"Run Like God."</strong></p>
+                            <p>This is not a simple product placement. We are integrating the <strong class="text-primary">Satoshi Samurai</strong> brand and ethos into the film's narrative, exposing the game to a massive, mainstream global audience. This initiative will run in parallel to our influencer-driven growth, creating a powerful cross-media feedback loop that drives brand awareness and user acquisition on an unprecedented scale.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="border-border/50" />
+
+                <section id="valuation" class="space-y-4">
+                    <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>
+                        The Valuation Formula: Satoshi Samurai vs. The Legacy Model
+                    </h2>
+                    <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                        <p class="text-lg">Our valuation is not speculative; it reflects a de-risked, revenue-ready asset with a generational market opportunity perfectly timed with the current crypto reboom.</p>
+                      
+                        <div class="mt-6 space-y-6">
+                            <div class="p-4 bg-muted/30 rounded-lg border border-border/50">
+                                <h4 class="font-bold text-lg text-primary">1. Category Creation, Not Competition</h4>
+                                <p class="mt-2">Satoshi Samurai does not compete with existing mobile games; it absorbs their addictive mechanics and solves their core economic flaws. We have engineered a stand-alone Web3 gaming ecosystem that integrates hyper-casual gameplay, true asset ownership, and a tokenized economy into a single, frictionless flywheel. This creates a gravitational pull for players and capital that legacy platforms, burdened by closed systems, cannot replicate.</p>
+                                <blockquote class="mt-3 border-l-4 border-primary/70 pl-3 italic text-sm text-muted-foreground">
+                                  "A competitor would need to build a hit game, a blockchain integration, and a token economy from scratch, then spend years trying to merge them. We have built this integrated system from day one. They won't see us coming."
+                                </blockquote>
+                            </div>
+                            <div class="p-4 bg-muted/30 rounded-lg border border-border/50">
+                                <h4 class="font-bold text-lg text-primary">2. Proprietary Value Engine: The (AI * T)k Multiplier</h4>
+                                <p class="mt-2">The value isn't just a fun game; it's **how** we've architected the ecosystem. The time, cost, and expertise required to design, build, and balance the gameplay, AI-driven mechanics, and tokenomics represents a massive R&D investment that we have already sunk. Our tech stack is a complex, proprietary logic engine that intelligently translates player engagement into network value.</p>
+                                 <blockquote class="mt-3 border-l-4 border-primary/70 pl-3 italic text-sm text-muted-foreground">
+                                  "This isn't a simple game; it's an asset. Replicating our balanced, live-tested game logic and economic model would cost a competing team millions in development costs and years of trial and error. We have already built the digital factory floor."
+                                </blockquote>
+                            </div>
+                            <div class="p-4 bg-muted/30 rounded-lg border border-border/50">
+                                <h4 class="font-bold text-lg text-primary">3. De-Risked Revenue Engine</h4>
+                                <p class="mt-2">We are not pitching a theoretical business model; we are demonstrating a functioning one with a fully architected, high-fidelity prototype that is live and tested. The complex architecture for premium game sales, the in-game NFT marketplace, and the $SAMURAI token utility is complete. Your investment is not funding R&D; it's funding the ignition of a pre-built, multi-vertical revenue engine.</p>
+                                 <blockquote class="mt-3 border-l-4 border-primary/70 pl-3 italic text-sm text-muted-foreground">
+                                  "This is a turnkey operation. You are acquiring a position in a company with a fully architected, multi-pronged path to revenue on Day One. The core product execution risk has been substantially mitigated."
+                                </blockquote>
+                            </div>
+                            <div class="p-4 bg-muted/30 rounded-lg border border-border/50">
+                                <h4 class="font-bold text-lg text-primary">4. Speed-to-Market as a Tangible Asset</h4>
+                                <p class="mt-2">In the current AI and Web3 gold rush, a 24-month head start with a live, tested product is an insurmountable moat. An investor isn't just buying equity; they are buying **time**—the most valuable resource in a hyper-growth market. Our valuation reflects the cost for any competitor to even attempt to catch up, timed perfectly with a resurgent crypto market cycle that amplifies our network effects.</p>
+                                 <blockquote class="mt-3 border-l-4 border-primary/70 pl-3 italic text-sm text-muted-foreground">
+                                   "What is the value of being two years ahead of everyone else in this market? A competitor starting today would burn through $50M and 24 months just to get to where our live game is right now. Our valuation is the price of that speed, certainty, and strategic advantage."
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="border-border/50" />
+                
+                <section id="monetization" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Monetization & Roadmap
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                    <div>
+                      <h3 class="font-bold text-primary">Phase 1 (Now - 6 Months):</h3>
+                      <p>Initial revenue through premium game downloads ($9.99), establishing a strong traditional revenue baseline. Focus on user acquisition and community building.</p>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-primary">Phase 2 (6 - 18 Months):</h3>
+                      <p>Introduce the $SAMURAI token. Launch an in-game marketplace for NFTs representing unique skins, weapons, and a myriad of in-game upgrades. Sell exclusive access to new levels, worlds, and cosmetic items, creating a vibrant in-game economy powered by our token.</p>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-primary">Phase 3 (18 - 24+ Months):</h3>
+                      <p>Expand into a full 3D virtual world (Metaverse). Monetize through land sales, virtual experiences, high-production value animated content, merchandise, and a potential movie franchise. Establish global esports leagues with significant prize pools funded by the ecosystem.</p>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-primary">Phase 4 (24+ Months): The Satoshi Samurai Engine</h3>
+                      <p>License the core game engine to other cryptocurrency and memecoin projects. This B2B model allows other tokens to be integrated into our game world for a significant licensing fee, creating a scalable, high-margin revenue stream and solidifying our platform as the standard for Web3 gaming integration.</p>
+                    </div>
+                     <div>
+                      <h3 class="font-bold text-primary">Net 24-Month Projection:</h3>
+                      <p>We project achieving over 10 million game downloads and a user base of 1 million active wallet holders, generating an estimated $50M in net revenue from combined game sales and initial in-game purchases.</p>
+                    </div>
+                  </div>
+                </section>
+
+                <hr class="border-border/50" />
+                
+                <section id="franchise-expansion" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M6 3v12"/><path d="M18 9v12"/><path d="M6 15h12"/><path d="M6 21h12"/><path d="M12 3v12"/></svg>
+                    Ecosystem &amp; Franchise Expansion
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                     <p class="text-lg">Satoshi Samurai is more than a game; it's the foundation of a multi-vertical entertainment franchise. Our ecosystem is designed for exponential growth through a variety of ancillary streams.</p>
+                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                        <div class="p-4 bg-muted/30 rounded-lg">
+                            <h4 class="font-bold text-primary flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M6 12h4m-2 2v-4"/><path d="M14 12h4m-2 2v-4"/><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M6 7V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/></svg>In-Game Economy</h4>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                <li>A myriad of in-game upgrades & power-ups.</li>
+                                <li>NFT marketplace for skins, weapons, and cosmetic items.</li>
+                                <li>Exclusive access to new levels, worlds, and secret content.</li>
+                                <li>The $SAMURAI token as the core utility for all transactions.</li>
+                            </ul>
+                        </div>
+                         <div class="p-4 bg-muted/30 rounded-lg">
+                            <h4 class="font-bold text-primary flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v18"/><path d="M3 7.5h4"/><path d="M3 12h4"/><path d="M3 16.5h4"/><path d="M17 3v18"/><path d="M21 7.5h-4"/><path d="M21 12h-4"/><path d="M21 16.5h-4"/></svg>Entertainment &amp; Media</h4>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                <li>High-production value animated series.</li>
+                                <li>Full-length feature film / movie franchise.</li>
+                                <li>Comic books and digital lore expansions.</li>
+                                <li>Official soundtrack and music releases.</li>
+                            </ul>
+                        </div>
+                         <div class="p-4 bg-muted/30 rounded-lg">
+                            <h4 class="font-bold text-primary flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="m15 5 4 4"/><path d="M11.7 2.3a1 1 0 0 0-1.4 0l-6 6a1 1 0 0 0 0 1.4l6 6a1 1 0 0 0 1.4 0l6-6a1 1 0 0 0 0-1.4Z"/><path d="m3 21 8-8"/><path d="M12.5 12.5 8 17"/></svg>Merchandise &amp; Licensing</h4>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                <li>Apparel and collectibles.</li>
+                                <li>Partnerships with lifestyle and tech brands.</li>
+                                <li>Licensing of the Satoshi Samurai IP for third-party products.</li>
+                                <li>"Satoshi Samurai Engine" licensing for other crypto projects.</li>
+                            </ul>
+                        </div>
+                         <div class="p-4 bg-muted/30 rounded-lg">
+                            <h4 class="font-bold text-primary flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" x2="12" y1="2" y2="6"/><line x1="12" x2="12" y1="18" y2="22"/><line x1="2" x2="6" y1="12" y2="12"/><line x1="18" x2="22" y1="12" y2="12"/></svg>Community &amp; Esports</h4>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                <li>Global esports tournaments with large prize pools.</li>
+                                <li>Community-governed DAO for game balancing.</li>
+                                <li>Exclusive events and virtual meetups in the metaverse.</li>
+                                <li>Player-created content and level designs.</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-muted/30 rounded-lg">
+                            <h4 class="font-bold text-primary flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Global Ambassadors</h4>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                <li>Partner with top-tier crypto & gaming influencers.</li>
+                                <li>Maintain growth and galvanize our global footprint.</li>
+                                <li>Drive authentic, community-led marketing campaigns.</li>
+                            </ul>
+                        </div>
+                         <div class="p-4 bg-muted/30 rounded-lg">
+                            <h4 class="font-bold text-primary flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>Strategic Partnerships</h4>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                <li>Pre-installation deals with major phone manufacturers.</li>
+                                <li>Integration with leading Web3 wallets and platforms.</li>
+                                <li>Collaborations with popular culture & gaming brands.</li>
+                            </ul>
+                        </div>
+                     </div>
+                  </div>
+                </section>
+                
+                <hr class="border-border/50" />
+                
+                <section id="tokenomics" class="space-y-4">
+                   <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M12 22V9"/><path d="m3.5 8.5 17 0"/></svg>
+                    Tokenomics &amp; Liquidity
+                  </h2>
+                   <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                      <div class="flex justify-center my-4">
+                          <img
+                            src="https://placehold.co/300x300/222222/FFD700.png?text=%24SAMURAI"
+                            alt="$SAMURAI Token Design"
+                            width="200"
+                            height="200"
+                            class="rounded-full shadow-2xl ring-primary animate-pulse"
+                            data-ai-hint="samurai coin"
+                          />
+                      </div>
+                      <p><strong>Token:</strong> $SAMURAI (Total Supply: 1B)</p>
+                      <p><strong>Memecoin Integration &amp; Liquidity:</strong> The $SAMURAI token combines the viral appeal of a memecoin with powerful utility. A significant portion of the ecosystem fund will be used to provide deep liquidity on major DEXs, ensuring price stability and attracting DeFi users. This dual-pronged approach leverages memetic marketing for rapid user acquisition while the game's economy provides fundamental value, creating a self-reinforcing growth loop.</p>
+                      <ul class="list-disc pl-6 mt-2 space-y-1 text-md">
+                        <li><strong>Play-to-Earn &amp; Staking (TBA%):</strong> Incentivizes gameplay and long-term holding.</li>
+                        <li><strong>Ecosystem &amp; Marketing (TBA%):</strong> Funds community grants, partnerships, and global marketing campaigns.</li>
+                        <li><strong>Team &amp; Advisors (TBA%):</strong> Vested over 4 years to align long-term interests.</li>
+                        <li><strong>Liquidity Provision (TBA%):</strong> Ensures a stable and liquid market for the $SAMURAI token from day one.</li>
+                      </ul>
+                      <div class="mt-6 space-y-4">
+                        <h4 class="font-bold text-lg text-primary">Token Development &amp; Exchange Listing Roadmap</h4>
+                        <p>The path from concept to a traded asset is a meticulous process. A portion of the seed round is allocated to execute this four-phase plan, ensuring a robust and successful launch.</p>
+                        <ul class="list-decimal pl-6 mt-2 space-y-2 text-md">
+                          <li>
+                            <strong>Architecture &amp; Smart Contract Development (Months 1-2):</strong>
+                            Design the token's architecture (e.g., on a scalable L2 like Base or Arbitrum), defining its properties, supply, and integration points with the Satoshi Samurai platform. Develop and rigorously test the smart contract code.
+                          </li>
+                          <li>
+                            <strong>Security Audits &amp; Legal Compliance (Months 3-4):</strong>
+                            Engage top-tier security firms to conduct multiple, independent audits of the smart contract. Simultaneously, work with legal counsel to ensure the token launch strategy is compliant with global regulations.
+                          </li>
+                          <li>
+                            <strong>Community Building &amp; Pre-Launch Marketing (Months 5-7):</strong>
+                            Initiate a targeted marketing campaign to build awareness and a strong community around the $SAMURAI token. Publish a detailed whitepaper, engage with crypto gaming communities, and launch incentive programs to drive early adoption.
+                          </li>
+                          <li>
+                            <strong>Exchange Listing &amp; Liquidity Provision (Months 8-9):</strong>
+                            Negotiate listing agreements with top-tier centralized and decentralized exchanges. A significant portion of the budget is allocated to listing fees and, crucially, to providing deep initial liquidity on these exchanges. This ensures stable trading from day one and signals confidence to the market.
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                </section>
+                
+                <hr class="border-border/50" />
+                
+                <section id="growth" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    Growth, Investment &amp; The Power of Liquidity
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                      <h3 class="font-bold text-primary text-lg">The Power of Liquidity: Our Value Multiplier</h3>
+                      <p>Our strategic allocation of a portion of our ecosystem fund to liquidity is a masterstroke. Liquidity is the engine of investor confidence and ecosystem stability.</p>
+                      <ul class="list-disc pl-6 space-y-1">
+                          <li><strong>Attracts Major Capital:</strong> Deep liquidity allows institutions and whales to trade without causing massive price swings, signaling trust and maturity to the entire market.</li>
+                          <li><strong>Ensures Price Stability:</strong> A stable token becomes a reliable unit of account for in-game transactions, from buying rare NFTs to entering tournaments.</li>
+                          <li><strong>Creates a Flywheel Effect:</strong> Deep liquidity attracts investment, increasing the token's price and our ecosystem's treasury value. This in turn fuels more growth, attracting more players, who drive more transactions, deepening liquidity further.</li>
+                      </ul>
+    
+                      <h3 class="font-bold text-primary text-lg mt-6">The Investment: A Generational Return Profile</h3>
+                      <p>An investment in our <strong>$50M seed round</strong> unlocks a fund-making return trajectory. Our growth is not linear; it's exponential, fueled by powerful network effects and viral loops inherent in our play-to-earn design.</p>
+                      <p class="mt-2">Beyond these projections, our fully integrated Web3 ecosystem and massive user base will make Satoshi Samurai a prime acquisition target for legacy gaming giants seeking a strategic entry into the market, providing a clear and lucrative exit opportunity.</p>
+                      
+                      <h4 class="font-semibold text-accent mt-4">The 5-Year Growth &amp; Revenue Model</h4>
+                      <p>The capital will be deployed to achieve the following milestones:</p>
+                       <ul class="list-decimal pl-6 space-y-1">
+                          <li><strong>Year 1 (Launch &amp; User Acquisition):</strong> Achieve 1M+ downloads by executing a targeted viral marketing strategy with crypto gaming influencers.</li>
+                          <li><strong>Years 2-3 (Scaling &amp; Network Effects):</strong> Grow to 10M+ active players by introducing the $SAMURAI token, NFT marketplace, and expanding game content.</li>
+                          <li><strong>Years 4-5 (Market Dominance):</strong> Surpass 50M+ active ecosystem participants, solidifying our position as a market leader through metaverse expansion and global esports leagues.</li>
+                      </ul>
+    
+                      <div class="mt-8 overflow-hidden rounded-lg border border-border bg-muted/30">
+                        <div class="p-4">
+                          <h4 class="font-bold text-primary text-lg text-center">The 5-Year Return Projection</h4>
+                          <p class="text-center text-sm text-muted-foreground mt-1">Based on projected revenues from game sales, NFT royalties, and metaverse land sales.</p>
+                        </div>
+                        <div class="grid grid-cols-5 text-center font-semibold text-sm text-foreground bg-muted/50 p-2">
+                            <div>Year</div>
+                            <div>Active Players</div>
+                            <div>Revenue</div>
+                            <div>Valuation</div>
+                            <div>Return on $50M</div>
+                        </div>
+                        <div class="grid grid-cols-1 divide-y divide-border/50 text-sm">
+                            <div class="grid grid-cols-5 p-3 items-center text-center">
+                                <div>1</div>
+                                <div>1M+</div>
+                                <div>$10M+</div>
+                                <div>$200M - $300M</div>
+                                <div class="font-bold text-accent">4x - 6x</div>
+                            </div>
+                            <div class="grid grid-cols-5 p-3 items-center text-center">
+                                <div>2</div>
+                                <div>5M+</div>
+                                <div>$50M+</div>
+                                <div>$500M - $750M</div>
+                                <div class="font-bold text-accent">10x - 15x</div>
+                            </div>
+                            <div class="grid grid-cols-5 p-3 items-center text-center">
+                                <div>3</div>
+                                <div>10M+</div>
+                                <div>$150M+</div>
+                                <div>$1B - $1.5B</div>
+                                <div class="font-bold text-accent">20x - 30x</div>
+                            </div>
+                            <div class="grid grid-cols-5 p-3 items-center text-center">
+                                <div>4</div>
+                                <div>25M+</div>
+                                <div>$400M+</div>
+                                <div>$2B - $3B</div>
+                                <div class="font-bold text-accent">40x - 60x</div>
+                            </div>
+                            <div class="grid grid-cols-5 p-3 items-center text-center">
+                                <div>5</div>
+                                <div>50M+</div>
+                                <div>$800M+</div>
+                                <div>$4B - $6B+</div>
+                                <div class="font-bold text-accent">80x - 120x+</div>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      <h4 class="font-bold text-primary text-lg mt-6">Total Ecosystem Valuation</h4>
+                      <p>The true value of Satoshi Samurai is the sum of its parts: a hyper-growth gaming company and a robust token economy. By combining our projected corporate valuation with the market capitalization of the $SAMURAI token, we are building a digital nation with compounding value.</p>
+                      <p class="italic text-muted-foreground">(This projection is conservative. Upon trading on major exchanges, the increased liquidity and market exposure could add a significant multiplier, potentially elevating the total ecosystem value well beyond initial estimates.)</p>
+                  </div>
+                </section>
+
+                <hr class="border-border/50" />
+                
+                <section id="budget-allocation" class="space-y-4">
+                    <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+                        Budget Allocation ($50M Seed)
+                    </h2>
+                    <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                        <p class="text-lg">
+                            This capital is not for survival; it is for market domination. The allocation reflects an aggressive, meticulously planned 24-month strategy to achieve global scale and brand ubiquity.
+                        </p>
+                        <div class="w-full space-y-4">
+                            <div class="border-b">
+                                <div class="flex justify-between items-center w-full py-4">
+                                    <h4 class="font-bold text-lg text-primary">Global Marketing & User Acquisition</h4>
+                                    <p class="font-bold text-2xl text-accent">$20M</p>
+                                </div>
+                                <div class="pb-4">
+                                    <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
+                                        <li><strong>Influencer Onboarding ($8M):</strong> Strategic partnerships with top-tier gaming influencers. Includes initial retainers, performance bonuses, and exclusive content creation budgets.</li>
+                                        <li><strong>Viral Campaigns & PR ($5M):</strong> Funding for high-impact digital PR, community-driven viral marketing initiatives, and social media advertising campaigns.</li>
+                                        <li><strong>Global Events & Travel ($4M):</strong> Presence at major gaming/crypto conferences (e.g., E3, Gamescom, Token2049). Covers sponsorships, booth costs, travel, and accommodation for the marketing team.</li>
+                                        <li><strong>Influencer Perks & Giveaways ($3M):</strong> A dedicated pool of $SAMURAI tokens and exclusive in-game assets to reward and incentivize our creator network and their communities.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="border-b">
+                                <div class="flex justify-between items-center w-full py-4">
+                                    <h4 class="font-bold text-lg text-primary">R&D and Engineering</h4>
+                                    <p class="font-bold text-2xl text-accent">$12.5M</p>
+                                </div>
+                                <div class="pb-4">
+                                     <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
+                                        <li><strong>Team Scaling ($10M):</strong> Competitive salaries to attract and retain elite engineering and design talent for a 24-month runway.</li>
+                                        <li><strong>AI & Tech Stack Expansion ($1.5M):</strong> Investment in advanced AI tooling, server infrastructure, and proprietary technology development to maintain our competitive edge.</li>
+                                        <li><strong>Team Per Diem & Operations ($1M):</strong> Covers daily operational costs, software licenses, and per diem for team members during travel and events.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="border-b">
+                                <div class="flex justify-between items-center w-full py-4">
+                                    <h4 class="font-bold text-lg text-primary">Tokenomics & Exchange Liquidity</h4>
+                                    <p class="font-bold text-2xl text-accent">$10M</p>
+                                </div>
+                                <div class="pb-4">
+                                    <p class="text-muted-foreground">This entire fund is dedicated to providing deep, initial liquidity for the $SAMURAI token on premier centralized (CEX) and decentralized (DEX) exchanges. This ensures price stability, attracts institutional investors, and signals market confidence from day one.</p>
+                                </div>
+                            </div>
+                            <div class="border-b">
+                                <div class="flex justify-between items-center w-full py-4">
+                                    <h4 class="font-bold text-lg text-primary">Operational & G&A</h4>
+                                    <p class="font-bold text-2xl text-accent">$5M</p>
+                                </div>
+                                <div class="pb-4">
+                                    <ul class="list-disc pl-6 space-y-2 text-muted-foreground">
+                                        <li><strong>Legal & Compliance ($2M):</strong> Retainers for top-tier legal counsel (K&L Gates) to navigate global regulatory landscapes for gaming and crypto.</li>
+                                        <li><strong>Global Office Setup ($2M):</strong> Establishment of a headquarters in Barcelona and a strategic office in the USA.</li>
+                                        <li><strong>Administrative Overhead ($1M):</strong> General administrative and corporate expenses for 24 months.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="border-b">
+                                <div class="flex justify-between items-center w-full py-4">
+                                    <h4 class="font-bold text-lg text-primary">Contingency Fund</h4>
+                                    <p class="font-bold text-2xl text-accent">$2.5M</p>
+                                </div>
+                                <div class="pb-4">
+                                    <p class="text-muted-foreground">A vital reserve allocated for unforeseen market opportunities, strategic acquisitions, or unexpected operational challenges. This ensures agility and resilience in a fast-moving market.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 p-4 bg-destructive/10 border border-destructive/30 rounded-lg text-center">
+                            <p class="font-bold text-destructive text-lg">Estimated Monthly Burn Rate: ~$1.2M - $1.8M</p>
+                            <p class="text-muted-foreground text-sm">(Burn rate will vary based on marketing campaign intensity and hiring velocity over the 24-month seed runway.)</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <hr class="border-border/50" />
+
+                <section id="team" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    The Core Team: An Elite Force
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                    <p>To execute this ambitious roadmap, we are assembling a lean, world-class team of specialists, including the founder's elite executive personnel who will manage the global execution of all set tasks. This is not a traditional corporate hierarchy; we are building a decentralized unit of elite operators. The following roles represent the core strike team required for launch:</p>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-inside list-disc">
+                      <li>Lead Game Developer (1)</li>
+                      <li>Lead Backend Engineer (1)</li>
+                      <li>Full-Stack Engineers (2)</li>
+                      <li>DevOps/SRE Specialist (1)</li>
+                      <li>Game Security &amp; Anti-Cheat Engineer (1)</li>
+                      <li>Blockchain Architect (1)</li>
+                      <li>CFO/Digital Custodian (1)</li>
+                      <li>Head of Growth &amp; Marketing (1)</li>
+                      <li>Community &amp; Esports Manager (1)</li>
+                      <li>Gaming Influencer &amp; Streamer Partnerships (1)</li>
+                      <li>Tokenomics &amp; Exchange Relations Specialist (1)</li>
+                    </ul>
+                    <p class="mt-4">Every member will be a stakeholder in our success, creating a dedicated team laser-focused on building the future of Web3 gaming.</p>
+                  </div>
+                </section>
+                
+                <hr class="border-border/50" />
+                
+                <section id="founder-bio" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg>
+                    Founder Bio: Angelo Ioannou
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                    <h3 class="font-bold text-primary text-lg">Samurai of Innovation | Architect of the Next Digital Age</h3>
+                    <p>Angelo Ioannou is not just a founder; he is a visionary architect who has been deep in the trenches developing a new tech slate for the future. He has weathered market volatility and faced setbacks that have forged him into a sharper, more resilient leader. Now, he emerges not just with a game, but with a revolutionary new ecosystem.</p>
+                    <h4 class="font-semibold text-accent mt-4">Satoshi Samurai: The Trojan Horse for a New Reality</h4>
+                    <p><strong class="text-primary">Satoshi Samurai</strong> is the entry point—the Trojan Horse—for a groundbreaking social AI engine. This engine is so foundational it is designed to be an <strong class="text-destructive">extinction-level event for legacy social apps like Instagram</strong>, engineered to dominate the next decade of digital interaction. It moves beyond simple attention metrics to create a multi-layered value engine based on a real, thriving internal economy.</p>
+                    <p>The game is the first, crucial step. Its success will demonstrate the power of our technology and community-building prowess. An investment in Satoshi Samurai is the key that unlocks entry into the AI engine—a ground-floor opportunity to back a platform poised to redefine the very fabric of social media and digital ownership.</p>
+                     <blockquote class="mt-2 border-l-4 border-primary/50 pl-4 italic text-muted-foreground">
+                      "The fight from zero to hero prepares you for success and refines you to be ready and fully optimized to scale. We are not just building a game; we are building the infrastructure for the future."
+                    </blockquote>
+                    <p>Angelo is currently raising <strong class="text-primary">$50M for the game's hypergrowth stage</strong>, which will serve as the launchpad for a subsequent <strong class="text-primary">$1B round for the AI engine</strong>. This is a chance to back a modern-day samurai in the entrepreneurial arena—focused, forged through adversity, and prepared to lead the charge into a future he is actively building.</p>
+                  </div>
+                </section>
+
+                <hr class="border-border/50" />
+                
+                <section id="investment-opportunity" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M18 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"/><path d="m22 9-4.5 4.5L13 9"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
+                    The Investment Opportunity
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                     <p class="text-lg">We are seeking a strategic partner for our seed round investment to accelerate our growth and solidify our position as a market leader in Web3 gaming.</p>
+                     <div class="p-6 bg-muted/50 rounded-lg text-center">
+                        <p class="text-2xl font-bold text-primary">Seed Round: $50M for 25% Equity</p>
+                        <p class="text-md text-muted-foreground mt-1">To fund global expansion, team scaling, meme coin development, and metaverse development.</p>
+                     </div>
+                     <p>This investment is not merely for operational runway; it is the ignition capital to capture a generational opportunity. Funds will be deployed to aggressively expand our user base, build out our NFT marketplace, and begin development of the broader Satoshi Samurai metaverse. We invite you to join us in building the future of digital entertainment.</p>
+                  </div>
+                </section>
+                
+                <hr class="border-border/50" />
+                
+                <section id="contact" class="space-y-4">
+                  <h2 class="flex items-center text-2xl font-headline font-bold text-primary mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Contact &amp; Next Steps
+                  </h2>
+                  <div class="space-y-4 text-foreground/90 pl-4 border-l-2 border-primary/50">
+                     <p class="text-lg">For further inquiries, term sheet requests, or to schedule a meeting, please contact:</p>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="p-6 bg-muted/50 rounded-lg">
+                            <h3 class="font-bold text-primary text-xl">Angelo Ioannou</h3>
+                            <p class="text-md text-muted-foreground">Developer, Architect, Founder of Affinity Magnate, Inc. / Ai NFT Lab</p>
+                            <div class="mt-4 space-y-2">
+                                <a href="mailto:ai@bitstudiocoin.com" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    <span>ai@bitstudiocoin.com</span>
+                                </a>
+                                <a href="tel:+34662569865" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <span>+34 662 569865</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/angelo-ioannou-7b5413155/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                    <span>LinkedIn Profile</span>
+                                </a>
+                                <a href="https://opensea.io/Ai-NFT-Lab/galleries" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 10.5c-2.25 0-4.5 1.5-4.5 3.75S9.75 18 12 18s4.5-1.5 4.5-3.75c0-1.35-1.05-2.55-2.25-3.15V10.5h-1.5v-.75c1.2-.6 2.25-1.8 2.25-3.15C15 5.25 13.5 3.75 12 3.75s-3 1.5-3 3.75c0 1.35 1.05 2.55 2.25 3.15V9h1.5v1.5z"/></svg>
+                                    <span>OpenSea Gallery</span>
+                                </a>
+                                <a href="https://open.spotify.com/playlist/50DXMfLbJor4w5OP2t30yl?si=NFSTsKYUSt-BdsmtJvFVzg" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="12" cy="12" r="10" /><path d="M7.5 12a4.5 4.5 0 1 0 9 0 4.5 4.5 0 1 0-9 0" /><path d="M9 10.5a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0" /><path d="M10.5 9a1 1 0 1 0 2 0 1 1 0 1 0-2 0" /></svg>
+                                    <span>Music Catalogue</span>
+                                </a>
+                            </div>
+                        </div>
+                         <div class="p-6 bg-muted/50 rounded-lg">
+                            <h3 class="font-bold text-primary text-xl">Fred Hill</h3>
+                            <p class="text-md text-muted-foreground">Strategic Business Development Liaison USA</p>
+                             <p class="text-sm text-muted-foreground">Affinity Magnate Inc.</p>
+                            <div class="mt-4 space-y-2">
+                                <a href="mailto:affinity@bitstudiocoin.com" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    <span>affinity@bitstudiocoin.com</span>
+                                </a>
+                                <a href="tel:+13015292039" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <span>+1 (301) 529-2039</span>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="p-6 bg-muted/50 rounded-lg mt-6">
+                        <h3 class="font-bold text-primary text-xl">Legal Counsel</h3>
+                        <p class="text-md text-muted-foreground">Daniel FC. Crowley, Partner at K&amp;L Gates</p>
+                        <p class="text-sm mt-2">Our lead attorney is a partner at K&amp;L Gates, a top-ten global law firm. For legal inquiries, please contact him directly.</p>
+                        <p class="text-xs text-muted-foreground mt-1">(K&amp;L will be formally activated upon securing our Series A round.)</p>
+                        <div class="mt-4 space-y-2">
+                            <a href="mailto:daniel.crowley@klgates.com" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span>daniel.crowley@klgates.com</span>
+                            </a>
+                             <a href="https://www.klgates.com/Daniel-Crowley/Files/K-L-Gates_Daniel-F.C.-Crowley-bio" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-accent hover:text-primary transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                                <span>View K&amp;L Gates Profile</span>
+                            </a>
+                        </div>
+                     </div>
+                     <p class="mt-6 text-center font-semibold text-muted-foreground">Affinity Magnate, Inc. / Ai NFT Lab / Satoshi Samurai</p>
+                  </div>
+                </section>
+
+            </div>
+        </div>
+        <footer class="p-6 bg-muted/30 rounded-b-lg">
+            <a href="/" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full sm:w-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                Back to Game
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
